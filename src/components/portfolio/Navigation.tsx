@@ -49,7 +49,7 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view"
+                href="https://drive.google.com/file/d/1SGhy8NyMDmYSQyNa6SZpr7VVi68WI0CN/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
@@ -93,7 +93,7 @@ const Navigation = () => {
                   </a>
                 ))}
                 <a
-                  href="https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view"
+                  href="https://drive.google.com/file/d/1SGhy8NyMDmYSQyNa6SZpr7VVi68WI0CN/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 px-6 py-3 rounded-full bg-primary text-primary-foreground text-center font-medium"
