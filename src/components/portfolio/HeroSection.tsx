@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Sparkles, Github, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Sparkles, Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -49,10 +49,18 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex items-center justify-center gap-2 text-muted-foreground mb-10"
+          className="flex flex-col items-center justify-center gap-3 text-muted-foreground mb-10"
         >
-          <MapPin className="w-4 h-4" />
-          <span>India</span>
+          <div className="flex items-center gap-2">
+            <MapPin className="w-4 h-4" />
+            <span>India</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Mail className="w-4 h-4" />
+            <a href="mailto:kartikeynegi2002@gmail.com" className="hover:text-primary transition-colors">
+              kartikeynegi2002@gmail.com
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
@@ -89,7 +97,7 @@ const HeroSection = () => {
             <Twitter className="w-5 h-5" />
           </a>
           <a
-            href="https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view"
+            href="https://drive.google.com/file/d/1SGhy8NyMDmYSQyNa6SZpr7VVi68WI0CN/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-gradient-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity duration-300 flex items-center gap-2"
