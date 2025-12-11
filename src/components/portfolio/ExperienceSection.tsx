@@ -7,9 +7,10 @@ const experiences = [
     role: "Data Engineer / Data Analyst",
     period: "Feb 2025 - Sep 2025",
     highlights: [
-      "Architected and maintained data systems for Hotel Ranking and Dynamic Pricing processing 5M+ records daily.",
-      "Built the CCR Dashboard and a Travel Chatbot using FastAPI and Redis, improving response times by 30%.",
-      "Optimized Hotel Ranking using PostGIS for geospatial analytics and automated partner workflows to reduce manual reporting by 40%.",
+      "Architected and maintained scalable data systems for Hotel Ranking and Dynamic Pricing, processing 5M+ records daily to ensure real-time accuracy.",
+      "Developed the CCR Dashboard and a comprehensive Travel Chatbot using FastAPI and Redis, achieving a 30% improvement in API response times.",
+      "Optimized Hotel Ranking algorithms using PostGIS for precise geospatial analytics, and automated partner workflows to reduce manual reporting efforts by 40%.",
+      "Technologies: Python, FastAPI, Redis, PostGIS, SQL, AWS (Lambda, S3), Data Pipelines involved in high-volume traffic processing.",
     ],
   },
   {
