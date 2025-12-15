@@ -15,11 +15,6 @@ const Footer = () => {
           className="flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div className="flex items-center gap-2 text-muted-foreground">
-            <span>© {currentYear} Kartikey Negi.</span>
-            <span className="hidden md:inline">•</span>
-            <span className="flex items-center gap-1">
-              Built with <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            </span>
           </div>
 
           <div className="flex items-center gap-4">

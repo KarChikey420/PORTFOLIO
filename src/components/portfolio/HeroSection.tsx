@@ -52,10 +52,6 @@ const HeroSection = () => {
           className="flex flex-col items-center justify-center gap-3 text-muted-foreground mb-10"
         >
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
-            <span>India</span>
-          </div>
-          <div className="flex items-center gap-2">
             <Mail className="w-4 h-4" />
             <a href="mailto:kartikeynegi2002@gmail.com" className="hover:text-primary transition-colors">
               kartikeynegi2002@gmail.com
