@@ -93,7 +93,7 @@ const HeroSection = () => {
             <Twitter className="w-5 h-5" />
           </a>
           <a
-            href="https://drive.google.com/file/d/1SGhy8NyMDmYSQyNa6SZpr7VVi68WI0CN/view?usp=sharing"
+            href="https://drive.google.com/file/d/1YyaDhAQ8QhbQfGJJB-yyKelmg0dnwJkl/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-gradient-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity duration-300 flex items-center gap-2"
