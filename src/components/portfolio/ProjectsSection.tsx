@@ -3,6 +3,15 @@ import { ExternalLink, Github, Rocket, CheckCircle } from "lucide-react";
 
 const projects = [
   {
+    title: "CSV Agent",
+    status: "Deployed",
+    tech_stack: ["React", "FastAPI", "LangChain", "Pandas"],
+    description:
+      "AI-powered CSV analysis tool that allows users to query and analyze CSV data using natural language processing.",
+    deploy_link: "https://csv-agent-ugpl.vercel.app/",
+    repo_link: "https://github.com/KarChikey420/csv_agent.git",
+  },
+  {
     title: "Slide Flow AI",
     status: "Deployed",
     tech_stack: ["React", "FastAPI", "LangChain", "GenAI"],
