@@ -13,16 +13,7 @@ const experiences = [
       "Technologies: Python, FastAPI, Redis, PostGIS, SQL, AWS (Lambda, S3), Data Pipelines involved in high-volume traffic processing.",
     ],
   },
-  {
-    company: "Prash Enterprises",
-    role: "Cloud Computing Intern",
-    period: "Sep 2024 - Dec 2024",
-    highlights: [
-      "Gained hands-on experience with core AWS services including EC2, S3, IAM, and Lambda.",
-      "Configured cloud environments and automated workflows while maintaining security best practices.",
-      "Developed foundational understanding of virtualization and scalable architecture design.",
-    ],
-  },
+
 ];
 
 const ExperienceSection = () => {
