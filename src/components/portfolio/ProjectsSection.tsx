@@ -56,10 +56,7 @@ const ProjectsSection = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
           <div className="w-20 h-1 bg-gradient-primary rounded-full" />
-          <p className="text-muted-foreground mt-4 max-w-2xl">
-            A collection of full-stack applications and data engineering solutions I've built,
-            showcasing my expertise in AI/ML integration, cloud infrastructure, and modern web technologies.
-          </p>
+
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
