@@ -49,7 +49,7 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1X4mbK8WhDwTvMz_ScfsVeIFbG8qv1CrB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1F5QnjO9s8O9gu_0hgkPuW3V0QG04JuAy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"

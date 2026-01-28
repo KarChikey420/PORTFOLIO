@@ -5,17 +5,17 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code,
-    skills: ["Python", "SQL", "Java", "C"],
+    skills: ["Python", "Javascript","SQL", "Java", "C"],
   },
   {
     title: "Frameworks & Libraries",
     icon: Code,
-    skills: ["Pandas", "NumPy", "Streamlit", "FastAPI", "Flask", "Matplotlib", "Seaborn", "LangChain"],
+    skills: ["Pandas", "NumPy", "Streamlit", "FastAPI", "Flask", "Matplotlib", "React","Talwind", "LangChain"],
   },
   {
     title: "Databases",
     icon: Database,
-    skills: ["MySQL", "Redis", "PostgreSQL (PostGIS)", "MongoDB", "MS SQL", "SQLite", "VectorDB"],
+    skills: ["MySQL", "Redis", "PostgreSQL (PostGIS)", "MongoDB", "MS SQL"],
   },
   {
     title: "Tools & DevOps",
