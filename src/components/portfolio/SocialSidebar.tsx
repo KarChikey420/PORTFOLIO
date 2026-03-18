@@ -6,7 +6,7 @@ const SocialSidebar = () => {
     { icon: <Github size={20} />, href: "https://github.com/KarChikey420", label: "GitHub" },
     { icon: <Linkedin size={20} />, href: "http://www.linkedin.com/in/kartikey-negi-51116a217", label: "LinkedIn" },
     { icon: <Twitter size={20} />, href: "https://x.com/KartikeyN86226", label: "Twitter" },
-    { icon: <Mail size={20} />, href: "mailto:kartikeynegi2002@gmail.com", label: "Email" },
+    { icon: <Mail size={20} />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=kartikeynegi2002@gmail.com", label: "Email" },
     { icon: <FileText size={20} />, href: "https://drive.google.com/file/d/1M0qEwYzHX39ZMldokYxO346zU_SzcUh5/view?usp=sharing", label: "Resume" },
   ];
 

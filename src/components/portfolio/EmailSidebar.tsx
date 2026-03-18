@@ -11,7 +11,9 @@ const EmailSidebar = () => {
         className="flex flex-col items-center gap-6"
       >
         <motion.a
-          href="mailto:kartikeynegi2002@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=kartikeynegi2002@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-sm tracking-widest [writing-mode:vertical-rl]"
           whileHover={{ y: -4 }}
         >
