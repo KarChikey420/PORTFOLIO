@@ -16,7 +16,7 @@ const Index = () => {
       <SocialSidebar />
       <EmailSidebar />
       <Navigation />
-      <div className="relative z-10 px-4 sm:px-8 lg:px-24">
+      <div className="relative z-10 w-full">
         <HeroSection />
         <ExperienceSection />
         <SkillsSection />

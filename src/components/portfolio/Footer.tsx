@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="footer" className="py-8 px-6 border-t border-white/10 relative z-10 mt-12 bg-black/20 backdrop-blur-sm">
+    <footer id="footer" className="py-8 pb-24 md:pb-8 px-4 md:px-6 border-t border-white/10 relative z-10 mt-12 bg-black/20 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo */}
         <motion.div

@@ -19,7 +19,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 pb-10 px-6">
+    <section id="home" className="min-h-screen h-auto flex items-center pt-24 pb-16 px-4 md:px-6">
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Side: Typography & CTA */}
@@ -28,7 +28,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight mt-10 md:mt-0"
           >
             <span className="text-primary">Hello,</span><br />
             I'm Kartikey Negi
@@ -80,7 +80,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative flex justify-center items-center z-10 h-[500px]"
+          className="relative flex justify-center items-center z-10 h-[350px] md:h-[500px] mt-8 md:mt-0"
         >
           {/* Abstract Fluid Blob Background */}
           <div className="absolute inset-0 z-0 flex justify-center items-center">
@@ -97,7 +97,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 10, scale: 0 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="absolute top-12 right-12 z-20 bg-primary text-black font-bold text-sm px-4 py-2 rounded-2xl rounded-bl-sm"
+            className="absolute top-4 right-4 md:top-12 md:right-12 z-20 bg-primary text-black font-bold text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 rounded-2xl rounded-bl-sm shadow-lg"
           >
             HELLO
           </motion.div>

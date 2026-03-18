@@ -15,7 +15,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20 px-6 relative z-10">
+    <section id="skills" className="py-20 px-4 md:px-6 relative z-10 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -61,8 +61,8 @@ const SkillsSection = () => {
           </div>
           
           {/* Gradients to fade edges */}
-          <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
-          <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
+          <div className="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
+          <div className="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
         </div>
       </div>
     </section>

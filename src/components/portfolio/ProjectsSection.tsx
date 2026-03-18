@@ -39,7 +39,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-20 px-6 relative z-10 overflow-hidden" id="projects">
+    <section className="py-20 pb-32 px-4 md:px-6 relative z-10 overflow-hidden" id="projects">
       <div className="max-w-[1400px] mx-auto">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
