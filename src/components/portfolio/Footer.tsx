@@ -12,7 +12,7 @@ const Footer = () => {
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
         >
-          <span className="text-xl font-bold tracking-tighter text-white">Arnab Ray<span className="text-primary">.</span></span>
+          <span className="text-xl font-bold tracking-tighter text-white">Kartikey Negi<span className="text-primary">.</span></span>
         </motion.div>
         
         <motion.p
@@ -22,7 +22,7 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm text-muted-foreground"
         >
-          &copy; {currentYear} Arnab Ray. All rights reserved.
+          &copy; {currentYear} Kartikey Negi. All rights reserved.
         </motion.p>
       </div>
     </footer>

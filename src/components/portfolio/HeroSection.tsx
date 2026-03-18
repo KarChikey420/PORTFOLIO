@@ -31,7 +31,7 @@ export const HeroSection = () => {
             className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight"
           >
             <span className="text-primary">Hello,</span><br />
-            I'm Arnab Ray
+            I'm Kartikey Negi
           </motion.h1>
           
           <motion.div 
@@ -43,21 +43,25 @@ export const HeroSection = () => {
             {text}<span className="text-primary animate-pulse w-3 inline-block">_</span>
           </motion.div>
 
-          <motion.a 
-            href="#projects"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-4 flex items-stretch bg-primary text-black rounded-full overflow-hidden font-medium shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.5)] transition-shadow"
+            className="flex flex-wrap items-center gap-4 mt-4"
           >
-            <span className="px-6 py-3 flex items-center">View My Portfolio</span>
-            <div className="w-[1px] bg-black/20 my-2" />
-            <span className="px-4 py-3 flex items-center justify-center">
-              <ArrowRight size={20} />
-            </span>
-          </motion.a>
+            <motion.a 
+              href="#projects"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-stretch bg-primary text-black rounded-full overflow-hidden font-medium shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.5)] transition-shadow"
+            >
+              <span className="px-6 py-3 flex items-center">View My Portfolio</span>
+              <div className="w-[1px] bg-black/20 my-2" />
+              <span className="px-4 py-3 flex items-center justify-center">
+                <ArrowRight size={20} />
+              </span>
+            </motion.a>
+          </motion.div>
         </div>
 
         {/* Right Side: Illustration */}

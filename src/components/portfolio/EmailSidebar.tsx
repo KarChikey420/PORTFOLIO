@@ -11,11 +11,11 @@ const EmailSidebar = () => {
         className="flex flex-col items-center gap-6"
       >
         <motion.a
-          href="mailto:arnabkray04@gmail.com"
+          href="mailto:kartikeynegi2002@gmail.com"
           className="text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-sm tracking-widest [writing-mode:vertical-rl]"
           whileHover={{ y: -4 }}
         >
-          arnabkray04@gmail.com
+          kartikeynegi2002@gmail.com
         </motion.a>
         {/* Vertical line */}
         <div className="w-[1px] h-24 bg-muted-foreground/30 mt-4 rounded-full" />

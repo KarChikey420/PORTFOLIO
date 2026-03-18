@@ -1,13 +1,13 @@
-import React from "react";
-import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
 const SocialSidebar = () => {
   const socials = [
-    { icon: <Github size={20} />, href: "https://github.com/arnabray", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/arnabray", label: "LinkedIn" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com/arnabray", label: "Instagram" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com/arnabray", label: "Twitter" },
+    { icon: <Github size={20} />, href: "https://github.com/KarChikey420", label: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "http://www.linkedin.com/in/kartikey-negi-51116a217", label: "LinkedIn" },
+    { icon: <Twitter size={20} />, href: "https://x.com/KartikeyN86226", label: "Twitter" },
+    { icon: <Mail size={20} />, href: "mailto:kartikeynegi2002@gmail.com", label: "Email" },
+    { icon: <FileText size={20} />, href: "https://drive.google.com/file/d/1M0qEwYzHX39ZMldokYxO346zU_SzcUh5/view?usp=sharing", label: "Resume" },
   ];
 
   return (
