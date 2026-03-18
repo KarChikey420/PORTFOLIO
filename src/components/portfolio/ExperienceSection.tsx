@@ -22,21 +22,21 @@ const experiences = [
 const ExperienceSection = () => {
   return (
     <section className="py-20 px-6 relative z-10" id="experience">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
-           className="text-center mb-16"
+           className="mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block relative">
             Professional Experience
-            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-primary rounded-full"></span>
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary rounded-full"></span>
           </h2>
         </motion.div>
 
-        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -44,15 +44,15 @@ const ExperienceSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
+              className="relative flex items-start gap-8 group is-active"
             >
               {/* Timeline Icon */}
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-card group-hover:bg-primary shadow-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors duration-300 z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-card group-hover:bg-primary shadow-sm shrink-0 transition-colors duration-300 z-10 mt-1">
                  <Briefcase className="w-4 h-4 text-primary group-hover:text-black transition-colors" />
               </div>
 
               {/* Card content */}
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl glass border border-white/5 group-hover:border-primary/30 transition-all duration-300 shadow-lg group-hover:shadow-[0_0_30px_rgba(163,230,53,0.1)]">
+              <div className="flex-1 p-6 md:p-8 rounded-2xl glass border border-white/5 group-hover:border-primary/30 transition-all duration-300 shadow-lg group-hover:shadow-[0_0_30px_rgba(163,230,53,0.1)]">
                 <div className="flex flex-col gap-2 mb-6">
                   <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">{exp.role}</h3>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground font-medium">

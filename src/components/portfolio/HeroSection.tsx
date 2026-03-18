@@ -19,8 +19,8 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 pb-10">
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="home" className="min-h-screen flex items-center pt-20 pb-10 px-6">
+      <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Side: Typography & CTA */}
         <div className="flex flex-col items-start gap-6 z-10">
@@ -50,7 +50,18 @@ export const HeroSection = () => {
             className="flex flex-wrap items-center gap-4 mt-4"
           >
             <motion.a 
-              href="#projects"
+              href="#experience"
+              onClick={async (e) => {
+                e.preventDefault();
+                const sections = ['experience', 'skills', 'projects'];
+                for (const id of sections) {
+                  const el = document.getElementById(id);
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                  }
+                }
+              }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-stretch bg-primary text-black rounded-full overflow-hidden font-medium shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.5)] transition-shadow"

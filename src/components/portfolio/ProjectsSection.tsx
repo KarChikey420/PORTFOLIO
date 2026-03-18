@@ -46,7 +46,7 @@ const ProjectsSection = () => {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
-           className="mb-12"
+           className="mb-12 max-w-6xl mx-auto w-full"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block relative">
             Featured Projects

@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Home, Coffee, User, LayoutGrid, MessageSquare } from "lucide-react";
+import { Home, Briefcase, Code2, LayoutGrid } from "lucide-react";
 
 const navItems = [
   { id: "home", icon: Home, label: "Home", href: "#" },
-  { id: "about", icon: Coffee, label: "About", href: "#about" },
-  { id: "profile", icon: User, label: "Profile", href: "#profile" },
+  { id: "experience", icon: Briefcase, label: "Professional Summary", href: "#experience" },
+  { id: "skills", icon: Code2, label: "Skills", href: "#skills" },
   { id: "projects", icon: LayoutGrid, label: "Projects", href: "#projects" },
-  { id: "chat", icon: MessageSquare, label: "Contact", href: "#footer" },
 ];
 
 const Navigation = () => {
@@ -16,12 +15,12 @@ const Navigation = () => {
   // Optional: Add scroll spy logic here to update activeId based on scroll position
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-auto">
+    <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 pointer-events-auto w-max">
       <motion.nav
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="glass rounded-full px-6 py-3 flex items-center gap-6 border border-white/10 shadow-lg"
+        className="glass rounded-full px-4 py-3 md:px-6 md:py-4 flex flex-row items-center gap-4 md:gap-6 border border-white/10 shadow-lg"
       >
         {navItems.map((item) => {
           const isActive = activeId === item.id;
