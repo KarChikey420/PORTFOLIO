@@ -18,6 +18,7 @@ const Index = () => {
       <Navigation />
       <div className="relative z-10 px-4 sm:px-8 lg:px-24">
         <HeroSection />
+        <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
         <Footer />

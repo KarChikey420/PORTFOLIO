@@ -1,69 +1,85 @@
 import { motion } from "framer-motion";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, CheckCircle2, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    role: "Data Engineer Intern (Backend & Infrastructure Focus)",
     company: "Yatra Online Ltd.",
-    role: "Data Engineer / Data Analyst",
-    period: "Feb 2025 - Sep 2025",
+    location: "Gurugram, India",
+    period: "Feb 2025 – Sep 2025",
     highlights: [
-      "Architected and maintained scalable data systems for Hotel Ranking and Dynamic Pricing, processing 5M+ records daily to ensure real-time accuracy.",
-      "Developed the CCR Dashboard and a comprehensive Travel Chatbot using FastAPI and Redis, achieving a 30% improvement in API response times.",
-      "Optimized Hotel Ranking algorithms using PostGIS for precise geospatial analytics, and automated partner workflows to reduce manual reporting efforts by 40%.",
-      "Technologies: Python, FastAPI, Redis, PostGIS, SQL, AWS (Lambda, S3), Data Pipelines involved in high-volume traffic processing.",
+      "Engineered scalable backend services for Dynamic Pricing and Hotel Ranking, directly impacting user search results.",
+      "Developed the Yatra Travel Chatbot using FastAPI, Redis, and Dialogflow, reducing support ticket volume by 30%.",
+      "Built the CCR internal dashboard using Streamlit and REST APIs to visualize competitive pricing data in real-time.",
+      "Optimized database interactions by implementing geospatial queries with PostGIS and Flask, improving search latency.",
+      "Designed robust ETL pipelines using Python, Airflow, and SQL to process 5M+ daily records with 99.9% system uptime.",
+      "Automated business reporting workflows using Cron jobs and SMTP, saving 15+ hours of manual work weekly.",
+      "Collaborated with the software team to integrate data insights into the core application using Apache Superset.",
     ],
   },
-
 ];
 
 const ExperienceSection = () => {
   return (
-    <section className="py-20 px-6" id="experience">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 relative z-10" id="experience">
+      <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
+           initial={{ opacity: 0, y: 20 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.6 }}
+           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience</h2>
-          <div className="w-20 h-1 bg-gradient-primary rounded-full" />
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block relative">
+            Professional Experience
+            <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-primary rounded-full"></span>
+          </h2>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="p-8 rounded-2xl bg-card border border-border card-hover"
+              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Briefcase className="w-5 h-5 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold">{exp.company}</h3>
-                  </div>
-                  <p className="text-primary font-medium">{exp.role}</p>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar className="w-4 h-4" />
-                  <span>{exp.period}</span>
-                </div>
+              {/* Timeline Icon */}
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-background bg-card group-hover:bg-primary shadow-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors duration-300 z-10">
+                 <Briefcase className="w-4 h-4 text-primary group-hover:text-black transition-colors" />
               </div>
-              <ul className="space-y-3">
-                {exp.highlights.map((highlight, hIndex) => (
-                  <li key={hIndex} className="flex items-start gap-3 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
+
+              {/* Card content */}
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl glass border border-white/5 group-hover:border-primary/30 transition-all duration-300 shadow-lg group-hover:shadow-[0_0_30px_rgba(163,230,53,0.1)]">
+                <div className="flex flex-col gap-2 mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">{exp.role}</h3>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground font-medium">
+                    <span className="flex items-center gap-1.5 text-white/90">
+                      <Briefcase className="w-4 h-4" />
+                      {exp.company}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <MapPin className="w-4 h-4" />
+                      {exp.location}
+                    </span>
+                    <span className="flex items-center gap-1.5 text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                      <Calendar className="w-3 h-3" />
+                      {exp.period}
+                    </span>
+                  </div>
+                </div>
+                
+                <ul className="space-y-3">
+                  {exp.highlights.map((highlight, hIndex) => (
+                    <li key={hIndex} className="flex items-start gap-3 text-muted-foreground leading-relaxed text-sm">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           ))}
         </div>
