@@ -12,7 +12,7 @@ const SocialSidebar = () => {
 
   return (
     <div className="hidden lg:flex fixed left-8 bottom-0 flex-col items-center justify-end h-screen z-40 pointer-events-auto pb-8">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
