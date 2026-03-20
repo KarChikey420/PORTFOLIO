@@ -28,35 +28,7 @@ const Navigation = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="glass rounded-full px-4 py-3 md:px-6 md:py-4 flex flex-row items-center justify-between gap-4 md:gap-6 border border-white/10 shadow-lg"
       >
-        {/* Left side: navigation items */}
-        <div className="flex items-center gap-2 md:gap-4">
-          {navItems.map((item) => {
-            const isActive = activeId === item.id;
-            const Icon = item.icon;
-            return (
-              <a
-                key={item.id}
-                href={item.href}
-                onClick={() => setActiveId(item.id)}
-                className="relative p-2 group transition-all duration-300"
-                aria-label={item.label}
-              >
-                <Icon
-                  size={24}
-                  className={`transition-colors duration-300 ${isActive ? 'text-primary' : 'text-muted-foreground group-hover:text-foreground'}`}
-                />
-                {isActive && (
-                  <motion.div
-                    layoutId="nav-pill"
-                    className="absolute inset-0 bg-primary/10 rounded-full -z-10"
-                    initial={false}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-              </a>
-            );
-          })}
-        </div>
+
         {/* Right side: social icons */}
         <div className="flex items-center gap-2 md:gap-4">
           {socialItems.map((social) => {

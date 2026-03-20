@@ -1,4 +1,5 @@
 import Navigation from "@/components/portfolio/Navigation";
+import BottomNav from "@/components/portfolio/BottomNav";
 import HeroSection from "@/components/portfolio/HeroSection";
 import AboutSection from "@/components/portfolio/AboutSection";
 import ExperienceSection from "@/components/portfolio/ExperienceSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <TopographicBackground />
       <EmailSidebar />
       <Navigation />
+      <BottomNav />
       <div className="relative z-10 w-full">
         <HeroSection />
         <ExperienceSection />
