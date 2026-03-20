@@ -59,7 +59,7 @@ const SkillsSection = () => {
 
         {/* Marquee Container */}
         <div className="relative w-full overflow-hidden py-10">
-          <div className="flex w-[200%] animate-[marquee_45s_linear_infinite] hover:[animation-play-state:paused]">
+          <div className="flex w-[200%] animate-[marquee_15s_linear_infinite] hover:[animation-play-state:paused]">
             {[...skills, ...skills].map((skill, idx) => (
               <div 
                 key={`${skill.name}-${idx}`} 
