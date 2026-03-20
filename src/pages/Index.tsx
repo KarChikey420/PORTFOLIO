@@ -6,14 +6,12 @@ import ProjectsSection from "@/components/portfolio/ProjectsSection";
 import SkillsSection from "@/components/portfolio/SkillsSection";
 import Footer from "@/components/portfolio/Footer";
 import TopographicBackground from "@/components/portfolio/TopographicBackground";
-import SocialSidebar from "@/components/portfolio/SocialSidebar";
 import EmailSidebar from "@/components/portfolio/EmailSidebar";
 
 const Index = () => {
   return (
     <main className="min-h-screen relative overflow-hidden">
       <TopographicBackground />
-      <SocialSidebar />
       <EmailSidebar />
       <Navigation />
       <div className="relative z-10 w-full">
