@@ -59,18 +59,21 @@ const Navigation = () => {
         </div>
         {/* Right side: social icons */}
         <div className="flex items-center gap-2 md:gap-4">
-          {socialItems.map((social) => (
-            <a
-              key={social.id}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-muted-foreground hover:text-primary transition-colors duration-300"
-              aria-label={social.label}
-            >
-              <social.icon size={20} />
-            </a>
-          ))}
+          {socialItems.map((social) => {
+            const Icon = social.icon;
+            return (
+              <a
+                key={social.id}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-muted-foreground hover:text-primary transition-colors duration-300"
+                aria-label={social.label}
+              >
+                <Icon size={20} />
+              </a>
+            );
+          })}
         </div>
       </motion.nav>
     </div>
