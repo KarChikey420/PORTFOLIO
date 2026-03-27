@@ -162,7 +162,7 @@ export const projects: Project[] = [
   },
   {
     title: "Dadi Astro",
-    description: "Platform for launching crypto tokens",
+    description: "A web application for astrological insights and personalized horoscope readings.",
     tech: ["Next.js","Typescript", "React", "Prisma","PostgreSQL","Gemini LLM" ],
     github: " ",
     demo: "https://www.savemedaddyastro.app/",
