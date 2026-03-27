@@ -135,6 +135,15 @@ export const experience: Experience[] = [
 ];
 
 export const projects: Project[] = [
+
+    {
+    title: "Dadi Astro",
+    description: "A web application for astrological insights and personalized horoscope readings.",
+    tech: ["Next.js","Typescript", "React", "Prisma","PostgreSQL","Gemini LLM" ],
+    github: " ",
+    demo: "https://www.savemedaddyastro.app/",
+    thumbnail: "/daddy-astro.png"
+    },
     {
     title: "HireCraft AI",
     description: "HireCraft AI is an AI-driven resume and career preparation platform that generates ATS-optimized resume bullet points, tailored cover letters, and interview preparation materials for job seekers",
@@ -159,14 +168,6 @@ export const projects: Project[] = [
     github: "https://github.com/KarChikey420/csv_agent.git",
     demo: "https://csv-agent-five.vercel.app/",
     thumbnail: "/csv-agent.png"
-  },
-  {
-    title: "Dadi Astro",
-    description: "A web application for astrological insights and personalized horoscope readings.",
-    tech: ["Next.js","Typescript", "React", "Prisma","PostgreSQL","Gemini LLM" ],
-    github: " ",
-    demo: "https://www.savemedaddyastro.app/",
-    thumbnail: "/daddy-astro.png"
   }
 ];
 
