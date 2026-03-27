@@ -70,7 +70,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Email",
-    href: "mailto:hrithikkumar79@outlook.com",
+    href: "mailto:kartikeynegi2002@gmail.com",
     icon: EnvelopeClosedIcon,
     color: "hover:text-green-400"
   },
