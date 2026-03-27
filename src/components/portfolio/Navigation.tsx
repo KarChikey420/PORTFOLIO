@@ -11,38 +11,45 @@ const socialItems = [
 
 const Navigation = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 pointer-events-auto flex justify-center">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-12 py-6 pointer-events-none">
       <motion.nav
-        initial={{ y: -40, opacity: 0 }}
+        initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex items-center gap-4 md:gap-6 px-6 py-3 mt-4 rounded-full border border-white/[0.06] shadow-lg"
-        style={{
-          background: "rgba(10, 10, 14, 0.55)",
-          backdropFilter: "blur(16px)",
-          WebkitBackdropFilter: "blur(16px)",
-        }}
+        transition={{ duration: 0.6 }}
+        className="max-w-[1400px] mx-auto flex items-center justify-between pointer-events-auto"
       >
-        {socialItems.map((social) => {
-          const Icon = social.icon;
-          return (
-            <motion.a
-              key={social.id}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.label}
-              className="p-2 rounded-full transition-colors duration-200"
-              style={{ color: "rgba(255,255,255,0.45)" }}
-              whileHover={{ y: -3, scale: 1.15, color: "hsl(83, 77%, 55%)" }}
-              transition={{ type: "spring", stiffness: 400, damping: 20 }}
-            >
-              <Icon size={24} />
-            </motion.a>
-          );
-        })}
+        {/* Left Side: Name & Role */}
+        <div className="flex flex-col">
+          <span className="text-lg md:text-xl font-bold tracking-tight text-white leading-tight">
+            Kartikey Negi
+          </span>
+          <span className="text-xs md:text-sm font-medium text-muted-foreground/80 tracking-wide uppercase">
+            Software Engineer
+          </span>
+        </div>
+
+        {/* Right Side: Social Icons */}
+        <div className="flex items-center gap-2 md:gap-4 p-1 rounded-full border border-white/5 glass bg-black/20">
+          {socialItems.map((social) => {
+            const Icon = social.icon;
+            return (
+              <motion.a
+                key={social.id}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="p-2 md:p-2.5 rounded-full text-muted-foreground hover:text-white transition-all duration-300 hover:bg-white/5"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Icon size={18} className="md:w-5 md:h-5" />
+              </motion.a>
+            );
+          })}
+        </div>
       </motion.nav>
-    </div>
+    </header>
   );
 };
 

@@ -39,23 +39,22 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-20 pb-32 px-4 md:px-6 relative z-10 overflow-hidden" id="projects">
+    <section className="py-32 px-4 md:px-12 relative overflow-hidden" id="projects">
       <div className="max-w-[1400px] mx-auto">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
-           className="mb-12 max-w-6xl mx-auto w-full"
+           className="mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block relative">
-            Featured Projects
-            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary rounded-full"></span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter">
+            Featured <span className="text-muted-foreground/40 italic">Projects</span>
           </h2>
         </motion.div>
 
         {/* Horizontal Scrolling Container */}
-        <div className="flex overflow-x-auto gap-8 pb-10 pt-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="flex overflow-x-auto gap-12 pb-12 pt-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:-mx-12 md:px-12" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
            <style>{`
              .scrollbar-hide::-webkit-scrollbar {
                  display: none;
@@ -65,32 +64,31 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="snap-center shrink-0 w-[85vw] md:w-[60vw] lg:w-[45vw] lg:max-w-[600px] group glass rounded-3xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 shadow-lg hover:shadow-[0_0_30px_rgba(163,230,53,0.15)] flex flex-col h-[500px]"
+              className="snap-center shrink-0 w-[85vw] md:w-[60vw] lg:w-[45vw] lg:max-w-[650px] group relative rounded-[2rem] overflow-hidden border border-white/5 bg-white/5 hover:border-primary/20 transition-all duration-700 shadow-2xl hover:shadow-primary/5 h-[550px] flex flex-col"
             >
-              {/* Top 60%: Image Container */}
-              <div className="relative h-[60%] w-full overflow-hidden bg-black/50 shrink-0">
+              {/* Image Container */}
+              <div className="relative h-[65%] w-full overflow-hidden shrink-0">
                 <img
                   src={project.preview_image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
                 
-                {/* Overlay Action Buttons */}
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 transform translate-y-[-10px] group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                {/* Overlay Links */}
+                <div className="absolute top-6 right-6 flex gap-3 opacity-0 transform translate-y-[-10px] group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100 italic font-mono text-xs">
                   {project.deploy_link && project.deploy_link !== "#" && (
                     <a
                       href={project.deploy_link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 rounded-full bg-black/50 backdrop-blur-md text-white hover:bg-primary hover:text-black transition-colors"
-                      aria-label="Live Demo"
+                      className="px-4 py-2 rounded-full bg-white text-black font-bold flex items-center gap-2 hover:bg-primary transition-colors"
                     >
-                      <ExternalLink className="w-5 h-5" />
+                      LIVE <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   )}
                   {project.repo_link && project.repo_link !== "#" && (
@@ -98,29 +96,31 @@ const ProjectsSection = () => {
                       href={project.repo_link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 rounded-full bg-black/50 backdrop-blur-md text-white hover:bg-primary hover:text-black transition-colors"
-                      aria-label="Source Code"
+                      className="px-4 py-2 rounded-full bg-black/50 backdrop-blur-md border border-white/10 text-white font-bold flex items-center gap-2 hover:border-primary transition-colors"
                     >
-                      <Github className="w-5 h-5" />
+                      CODE <Github className="w-3.5 h-3.5" />
                     </a>
                   )}
                 </div>
               </div>
               
-              {/* Bottom 40%: Content */}
-              <div className="p-6 md:p-8 flex flex-col h-[40%] bg-[#0a0a0a]/40 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors truncate">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground text-sm md:text-base line-clamp-2 mb-4 leading-relaxed">
+              {/* Content Container */}
+              <div className="p-8 md:p-10 flex flex-col h-[35%] bg-black/40 backdrop-blur-xl">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:text-primary transition-colors duration-500 truncate">
+                    {project.title}
+                  </h3>
+                </div>
+                
+                <p className="text-muted-foreground text-sm md:text-[15px] line-clamp-2 leading-relaxed mb-6">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mt-auto overflow-hidden h-[34px]">
+                <div className="mt-auto flex flex-wrap gap-2 overflow-hidden h-[34px]">
                   {project.tech_stack.map((tech, tIndex) => (
                     <span
                       key={tIndex}
-                      className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 tracking-wide whitespace-nowrap"
+                      className="px-3 py-1.5 rounded-full border border-white/5 bg-white/5 text-[11px] font-bold text-muted-foreground/80 tracking-widest uppercase hover:text-white transition-colors"
                     >
                       {tech}
                     </span>

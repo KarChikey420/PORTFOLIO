@@ -1,26 +1,17 @@
 import Navigation from "@/components/portfolio/Navigation";
-import BottomNav from "@/components/portfolio/BottomNav";
-import HeroSection from "@/components/portfolio/HeroSection";
-import AboutSection from "@/components/portfolio/AboutSection";
-import ExperienceSection from "@/components/portfolio/ExperienceSection";
+
+import ExperienceSkillsLayout from "@/components/portfolio/ExperienceSkillsLayout";
 import ProjectsSection from "@/components/portfolio/ProjectsSection";
-import SkillsSection from "@/components/portfolio/SkillsSection";
 import Footer from "@/components/portfolio/Footer";
-import TopographicBackground from "@/components/portfolio/TopographicBackground";
-import EmailSidebar from "@/components/portfolio/EmailSidebar";
 
 const Index = () => {
   return (
-    <main className="min-h-screen relative overflow-hidden">
-      <TopographicBackground />
-      <EmailSidebar />
+    <main className="min-h-screen bg-black text-white selection:bg-primary/30 selection:text-primary">
       <Navigation />
-      <BottomNav />
-      <div className="relative z-10 w-full">
-        <HeroSection />
-        <ExperienceSection />
-        <SkillsSection />
+      <div className="relative z-10 w-full pt-20">
         <ProjectsSection />
+
+        <ExperienceSkillsLayout />
         <Footer />
       </div>
     </main>
