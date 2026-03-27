@@ -45,7 +45,7 @@ export const personalInfo: PersonalInfo = {
   title: "Software Engineer",
   email: "kartikeynegi2002@gmail.com",
   resumeUrl: "https://drive.google.com/file/d/1M0qEwYzHX39ZMldokYxO346zU_SzcUh5/view?usp=sharing",
-  resumeFilename: "Hrithik_Nayak_Resume.pdf"
+  resumeFilename: "Kartikey_negi_Resume.pdf"
 };
 
 // Social links data
