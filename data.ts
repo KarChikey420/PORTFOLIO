@@ -1,9 +1,9 @@
-import { 
-  GitHubLogoIcon, 
-  LinkedInLogoIcon, 
-  TwitterLogoIcon, 
-  EnvelopeClosedIcon, 
-  FileTextIcon 
+import {
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+  EnvelopeClosedIcon,
+  FileTextIcon
 } from "@radix-ui/react-icons";
 
 // Portfolio data types
@@ -84,38 +84,38 @@ export const socialLinks: SocialLink[] = [
 
 // Portfolio data
 export const skills: string[] = [
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "HTML",
-    "CSS",
-    "SQL",
-    "FastAPI",
-    "Flask",
-    "React",
-    "Next.js",
-    "Express.js",
-    "Tailwind CSS",
-    "Pandas",
-    "Airflow",
-    "LangChain",
-    "LangGraph",
-    "SQLAlchemy",
-    "PostgreSQL",
-    "Redis",
-    "MongoDB",
-    "MySQL",
-    "ChromaDB",
-    "PostGIS",
-    "Prisma",
-    "AWS",
-    "Docker",
-    "Git",
-    "Kafka",
-    "Vercel",
-    "REST APIs",
-    "System Design",
-    "Generative AI"
+  "Python",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "SQL",
+  "FastAPI",
+  "Flask",
+  "React",
+  "Next.js",
+  "Express.js",
+  "Tailwind CSS",
+  "Pandas",
+  "Airflow",
+  "LangChain",
+  "LangGraph",
+  "SQLAlchemy",
+  "PostgreSQL",
+  "Redis",
+  "MongoDB",
+  "MySQL",
+  "ChromaDB",
+  "PostGIS",
+  "Prisma",
+  "AWS",
+  "Docker",
+  "Git",
+  "Kafka",
+  "Vercel",
+  "REST APIs",
+  "System Design",
+  "Generative AI"
 ];
 
 export const experience: Experience[] = [
@@ -136,15 +136,24 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
 
-    {
+  {
     title: "Dadi Astro",
     description: "A web application for astrological insights and personalized horoscope readings.",
-    tech: ["Next.js","Typescript", "React", "Prisma","PostgreSQL","Gemini LLM" ],
+    tech: ["Next.js", "Typescript", "React", "Prisma", "PostgreSQL", "Gemini LLM"],
     github: " ",
     demo: "https://www.savemedaddyastro.app/",
     thumbnail: "/daddy-astro.png"
-    },
-    {
+  },
+  {
+    title: "PrepX",
+    description: "PrepX is an AI-powered interview preparation platform that helps job seekers prepare for interviews by providing personalized feedback and guidance",
+    tech: ["FastAPI", "React", "Redis", "MongoDB", "Kimi-K2", "Deepgram"],
+    github: "https://github.com/KarChikey420/PrepX.git",
+    demo: "https://prep-x-omega.vercel.app/",
+    thumbnail: "/prepX.png"
+
+  },
+  {
     title: "HireCraft AI",
     description: "HireCraft AI is an AI-driven resume and career preparation platform that generates ATS-optimized resume bullet points, tailored cover letters, and interview preparation materials for job seekers",
     tech: ["Python", "FastAPI", "LangChain", "PostgreSQL", "React"],
@@ -154,17 +163,17 @@ export const projects: Project[] = [
   }
   ,
   {
-  title: "SlideFlow",
-  description: "SlideFlow AI is an AI-powered presentation generator that transforms user input into visually appealing slides automatically, reducing manual design effort and speeding up content creation.",
-  tech: ["Python", "FastAPI", "LangChain","PostgreSQL", "React", "TypeScript"],
-  github: "https://github.com/KarChikey420/SlideFlow-AI.git",
-  demo: "https://slide-flow-ai.vercel.app/",
-  thumbnail: "/slideflow.png"
+    title: "SlideFlow",
+    description: "SlideFlow AI is an AI-powered presentation generator that transforms user input into visually appealing slides automatically, reducing manual design effort and speeding up content creation.",
+    tech: ["Python", "FastAPI", "LangChain", "PostgreSQL", "React", "TypeScript"],
+    github: "https://github.com/KarChikey420/SlideFlow-AI.git",
+    demo: "https://slide-flow-ai.vercel.app/",
+    thumbnail: "/slideflow.png"
   },
   {
     title: "CSV Agent",
     description: "CSV Agent is an AI-powered data analysis tool that enables users to query and analyze CSV files using natural language, automatically generating insights without manual coding",
-    tech: ["FastAPI", "React","LangGraph","PostgreSQL","Tailwind"],
+    tech: ["FastAPI", "React", "LangGraph", "PostgreSQL", "Tailwind"],
     github: "https://github.com/KarChikey420/csv_agent.git",
     demo: "https://csv-agent-five.vercel.app/",
     thumbnail: "/csv-agent.png"
