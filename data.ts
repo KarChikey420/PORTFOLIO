@@ -150,7 +150,7 @@ export const projects: Project[] = [
     tech: ["FastAPI", "React", "Redis", "MongoDB", "Kimi-K2", "Deepgram"],
     github: "https://github.com/KarChikey420/PrepX.git",
     demo: "https://prep-x-omega.vercel.app/",
-    thumbnail: "/prepX.png"
+    thumbnail: "/PrepX.png"
 
   },
   {
