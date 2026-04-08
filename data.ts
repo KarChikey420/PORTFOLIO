@@ -154,6 +154,14 @@ export const projects: Project[] = [
 
   },
   {
+    title: "CSV Agent",
+    description: "CSV Agent is an AI-powered data analysis tool that enables users to query and analyze CSV files using natural language, automatically generating insights without manual coding",
+    tech: ["FastAPI", "React", "LangGraph", "PostgreSQL", "Tailwind"],
+    github: "https://github.com/KarChikey420/csv_agent.git",
+    demo: "https://csv-agent-five.vercel.app/",
+    thumbnail: "/eda-agent.png"
+  },
+  {
     title: "HireCraft AI",
     description: "HireCraft AI is an AI-driven resume and career preparation platform that generates ATS-optimized resume bullet points, tailored cover letters, and interview preparation materials for job seekers",
     tech: ["Python", "FastAPI", "LangChain", "PostgreSQL", "React"],
@@ -169,15 +177,8 @@ export const projects: Project[] = [
     github: "https://github.com/KarChikey420/SlideFlow-AI.git",
     demo: "https://slide-flow-ai.vercel.app/",
     thumbnail: "/slideflow.png"
-  },
-  {
-    title: "CSV Agent",
-    description: "CSV Agent is an AI-powered data analysis tool that enables users to query and analyze CSV files using natural language, automatically generating insights without manual coding",
-    tech: ["FastAPI", "React", "LangGraph", "PostgreSQL", "Tailwind"],
-    github: "https://github.com/KarChikey420/csv_agent.git",
-    demo: "https://csv-agent-five.vercel.app/",
-    thumbnail: "/csv-agent.png"
   }
+  
 ];
 
 // Default export for convenience
