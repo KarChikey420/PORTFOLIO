@@ -159,7 +159,7 @@ export const projects: Project[] = [
     tech: ["FastAPI", "React", "LangGraph", "PostgreSQL", "Tailwind"],
     github: "https://github.com/KarChikey420/csv_agent.git",
     demo: "https://csv-agent-five.vercel.app/",
-    thumbnail: "/eda-agent.png"
+    thumbnail: "/eda_agent.png"
   },
   {
     title: "HireCraft AI",
