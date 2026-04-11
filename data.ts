@@ -76,9 +76,9 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1hfsJO3wL1ef3MAL0z780NbPlq11BfD2u/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view?usp=sharing",
     icon: FileTextIcon,
-    download: "https://drive.google.com/file/d/1hfsJO3wL1ef3MAL0z780NbPlq11BfD2u/view?usp=sharing"
+    download: "https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view?usp=sharing"
   }
 ];
 
