@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Kartikey Negi",
   title: "Software Engineer",
   email: "kartikeynegi2002@gmail.com",
-  resumeUrl: "https://drive.google.com/file/d/1M0qEwYzHX39ZMldokYxO346zU_SzcUh5/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1AxfiSP71wpnnQerfaqUAk5Sm15o1x1Vo/view?usp=sharing",
   resumeFilename: "Kartikey_negi_Resume.pdf"
 };
 
@@ -76,9 +76,9 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1AxfiSP71wpnnQerfaqUAk5Sm15o1x1Vo/view?usp=sharing",
     icon: FileTextIcon,
-    download: "https://drive.google.com/file/d/1EOZ17f6D1NawuWSRYWVdQa2czDxiQmCj/view?usp=sharing"
+    download: "https://drive.google.com/file/d/1AxfiSP71wpnnQerfaqUAk5Sm15o1x1Vo/view?usp=sharing"
   }
 ];
 
