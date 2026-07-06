@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Kartikey Negi",
   title: "Software Engineer",
   email: "kartikeynegi2002@gmail.com",
-  resumeUrl: "https://drive.google.com/file/d/1-4twHLEiQoqdqyvibzrqzuvKCKLcfFXy/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1zVu8N786eCiHyvOb9tQUTXVzG_HB5PNo/view?usp=sharing",
   resumeFilename: "Kartikey_negi_Resume.pdf"
 };
 
@@ -76,9 +76,9 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1-4twHLEiQoqdqyvibzrqzuvKCKLcfFXy/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1zVu8N786eCiHyvOb9tQUTXVzG_HB5PNo/view?usp=sharing",
     icon: FileTextIcon,
-    download: "https://drive.google.com/file/d/1-4twHLEiQoqdqyvibzrqzuvKCKLcfFXy/view?usp=sharing"
+    download: "https://drive.google.com/file/d/1zVu8N786eCiHyvOb9tQUTXVzG_HB5PNo/view?usp=sharing"
   }
 ];
 
@@ -120,16 +120,25 @@ export const skills: string[] = [
 
 export const experience: Experience[] = [
   {
-    role: "Software Engineer Intern",
-    company: "Yatra Online Ltd.",
-    duration: "feb 2025 - sep 2025",
+    role: "Software Engineer",
+    company: "MV Altios",
+    duration: "May 2026 - Present",
     description: `
-      Engineered scalable backend services for Dynamic Pricing and Hotel Ranking, directly influencing user search results.||
-      Developed the Yatra Travel Chatbot using FastAPI, Redis, and Dialogflow, reducing support ticket volume by 30%.||
+      Architected and delivered the Schülke Web Tool using C# and ASP.NET, streamlining client data management for 50+ internal users and cutting report generation time by 40%.||
+      Engineered Python automation scripts for Microsoft Outlook, automating email triage, data extraction, and alert notifications — eliminating 10+ hours/week of repetitive manual work.||
+      Designed and deployed UiPath RPA workflows automating 10+ SAP business processes, reducing manual processing time by 60% with zero critical failures across 500+ executions.
+    `
+  },
+  {
+    role: "Software Engineer",
+    company: "Yatra Online Ltd.",
+    duration: "Feb 2025 - Sep 2025",
+    description: `
+      Designed and developed back-end solutions integrating multiple components into systems processing 5M+ records/day with 99.9% uptime; performed defect fixing and QA for production systems.||
+      Automated ETL pipelines using Apache Airflow and GitHub Actions CI/CD, processing 5M+ records/day and reducing manual workflow overhead by 70%.||
       Built the CCR internal dashboard with Streamlit and REST APIs to visualize competitive pricing data in real time.||
       Optimized geospatial data access with PostGIS and Flask to improve hotel search latency.||
-      Designed ETL pipelines using Python, Airflow, and SQL to process 5M+ daily records with 99.9% uptime.||
-      Automated reporting workflows with cron jobs and SMTP, saving more than 15 hours of manual work each week.
+      Collaborated cross-functionally with product, data, and business teams to define requirements; authored technical documentation and maintained change repositories using Git.
     `
   }
 ];
@@ -178,7 +187,7 @@ export const projects: Project[] = [
     demo: "https://slide-flow-ai.vercel.app/",
     thumbnail: "/slideflow.png"
   }
-  
+
 ];
 
 // Default export for convenience
