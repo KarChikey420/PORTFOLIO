@@ -132,7 +132,7 @@ export const experience: Experience[] = [
   {
     role: "Software Engineer",
     company: "Yatra Online Ltd.",
-    duration: "Feb 2025 - Sep 2025",
+    duration: "Feb 2025 - feb 2026",
     description: `
       Designed and developed back-end solutions integrating multiple components into systems processing 5M+ records/day with 99.9% uptime; performed defect fixing and QA for production systems.||
       Automated ETL pipelines using Apache Airflow and GitHub Actions CI/CD, processing 5M+ records/day and reducing manual workflow overhead by 70%.||
