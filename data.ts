@@ -150,7 +150,7 @@ export const projects: Project[] = [
     description: "A web application for astrological insights and personalized horoscope readings.",
     tech: ["Next.js", "Typescript", "React", "Prisma", "PostgreSQL", "Gemini LLM"],
     github: " ",
-    demo: "https://www.savemedaddyastro.app/",
+    demo: "https://astrodadi.com/",
     thumbnail: "/daddy-astro.png"
   },
   {
